@@ -1,0 +1,69 @@
+use("dbTechStore")
+
+db.clientes.insertMany([
+    {
+        _id: "001",
+        nombre: "Juan",
+        apellido: "Pérez",
+        fechanacimiento: "15/05/1990",
+        celular: "987654321",
+        categoriasinteres: [
+            "Laptops",
+            "Monitores",
+            "Impresoras"
+        ]
+    },
+    {
+        _id: "002",
+        nombre: "Ana",
+        apellido: "Gómez",
+        fechanacimiento: "",
+        celular: "987654322",
+        categoriasinteres: [
+            "Tablets",
+            "Teclados",
+            "Ratones",
+            "Monitores"
+        ]
+    },
+    {
+        _id: "003",
+        nombre: "Luis",
+        apellido: "Martínez",
+        fechanacimiento: "30/11/1988",
+        celular: "987654323",
+        categoriasinteres: [
+            "Laptops",
+            "Accesorios",
+            "Impresoras",
+            "Teclados"
+        ]
+    },
+    {
+        _id: "004",
+        nombre: "María",
+        apellido: "López",
+        fechanacimiento: "17/02/1988",
+        celular: "",
+        categoriasinteres: [
+            "Impresoras",
+            "Monitores",
+            "Proyectores"
+        ]
+    },
+    {
+        _id: "005",
+        nombre: "Sofía",
+        apellido: "Ramírez",
+        fechanacimiento: "25/09/1993",
+        celular: "987654326",
+        categoriasinteres: [
+            "Tablets",
+            "Accesorios",
+            "Software",
+            "Monitores"
+        ]
+    }
+])
+
+db.clientes.find()

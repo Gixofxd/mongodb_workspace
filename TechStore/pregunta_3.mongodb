@@ -1,0 +1,32 @@
+//Actualice el nombre del equipo: Monitor LG por Monitor Samsung
+/* use("dbTechStore")
+db.equipos.updateOne(
+    { _id: ObjectId("680058d7695b2eb395d8fe46") },
+    { $set: {nombre: "Monitor Samsung"}}
+)
+
+db.equipos.find() */
+
+//Actualice el precio de la Tablet Lenovo de 1750 a 2350.
+/* use("dbTechStore")
+db.equipos.updateOne(
+    { nombre: "Tablet Lenovo"},
+    { $set: {precio: 2350}}
+)
+db.equipos.find({ nombre: "Tablet Lenovo"}) */
+
+//Actualice la fecha de nacimiento de Ana Gómez por 06/06/2006
+/* use("dbTechStore")
+db.clientes.updateOne(
+    { nombre: "Ana"},
+    { $set: {fechanacimiento: "06/06/2006"}}
+)
+db.clientes.find({ nombre: "Ana"}) */
+
+//Actualice el número de celular de Juan Pérez por: 989654333
+use("dbTechStore")
+db.clientes.updateOne(
+    { nombre: "Juan"},
+    { $set: {celular: "989654333"}}
+)
+db.clientes.find({ nombre: "Juan"})

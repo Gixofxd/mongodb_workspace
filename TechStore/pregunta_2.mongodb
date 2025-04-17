@@ -1,0 +1,24 @@
+//Listar los 3 primeros documentos de equipos.
+use("dbTechStore")
+db.equipos.find().limit(3) 
+
+//Listar los 2 primeros documentos de clientes.
+use("dbTechStore")
+db.clientes.find().limit(2)
+
+//Listar solamente los atributos: nombre, apellido, celular y categorías de interés de los clientes.
+use("dbTechStore")
+db.clientes.find({},{
+    nombre: 1,
+    apellido: 1,
+    celular: 1,
+    categoriasinteres: 1,
+    _id: 0
+
+})
+
+//Listar los equipos cuya cantidad de stock sea igual o mayor que 100
+use("dbTechStore")
+db.equipos.find(
+    { stock: {$gte:100}}
+)

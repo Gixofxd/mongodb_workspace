@@ -1,0 +1,61 @@
+//crear base de datos
+use("dbTechStore")
+
+//crear la colección y documento
+db.equipos.insertMany([
+    {
+        nombre: "Laptop Asus",
+        categoria: "Portátiles",
+        precio: 2500,
+        stock: 30,
+        accesorios: ["Cargador",
+            "Funda de protección",
+            "Ratón inalámbrico"
+        ]
+
+    },
+    {
+        nombre: "Monitor LG",
+        categoria: "Monitores",
+        precio: 999,
+        stock: 20,
+        accesorios: ["Cable HDMI",
+            "Base ajustable",
+            "Adaptador de corriente"
+        ]
+    },
+    {
+        nombre: "Teclado Logitech",
+        categoria: "Teclados",
+        precio: 180,
+        stock: 30,
+        accesorios: ["Reposamuñecas",
+            "Extractor de teclas",
+            "Cable USB desmontable"
+        ]
+    },
+    {
+        nombre: "Impresora Epson",
+        categoria: "Impresoras",
+        precio: 1230,
+        stock: 100,
+        accesorios: ["Cartucho de tóner",
+            "Cable USB",
+            "Manual de usuario"
+        ]
+    },
+    {
+        nombre: "Tablet Lenovo",
+        categoria: "Tablets",
+        precio: 1750,
+        stock: 300,
+        accesorios: ["Cargador rápido",
+            "Funda protectora",
+            "Lápiz táctil"
+        ]
+    }
+])
+
+
+//listar los resultados
+db.equipos.find()
